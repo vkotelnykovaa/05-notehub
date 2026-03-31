@@ -1,5 +1,5 @@
 import axios, { type AxiosResponse } from 'axios';
-import type { Note, NoteTag } from '../types/tempNote';
+import type { Note, NoteTag } from '../types/note';
 
 const token = import.meta.env.VITE_NOTEHUB_TOKEN;
 
