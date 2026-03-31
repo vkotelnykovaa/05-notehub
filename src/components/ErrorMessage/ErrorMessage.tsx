@@ -1,4 +1,3 @@
-// src/components/ErrorMessage/ErrorMessage.tsx
 interface Props {
   message: string;
 }
