@@ -16,8 +16,6 @@ const api = axios.create({
   },
 });
 
-/** ---------------- Types for service layer ---------------- */
-
 export interface FetchNotesParams {
   page: number;
   perPage: number;
@@ -41,8 +39,6 @@ export interface CreateNotePayload {
 export type CreateNoteResponse = Note;
 
 export type DeleteNoteResponse = Note;
-
-/** ---------------- API functions ---------------- */
 
 export async function fetchNotes(
   params: FetchNotesParams

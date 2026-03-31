@@ -3,7 +3,7 @@ import css from '../Pagination/Pagination.module.css';
 
 interface Props {
   pageCount: number;
-  forcePage: number; // 0-based для ReactPaginate
+  forcePage: number;
   onPageChange: (selected: number) => void; // 0-based
 }
 
