@@ -3,15 +3,15 @@ import { useQuery } from '@tanstack/react-query';
 import { keepPreviousData } from '@tanstack/react-query';
 import { useDebouncedCallback } from 'use-debounce';
 
-import SearchBox from '../SearchBox/SearchBox';
-import Pagination from '../Pagination/Pagination';
-import NoteList from '../NoteList/NoteList';
-import Modal from '../Modal/Modal';
-import NoteForm from '../NoteForm/NoteForm';
+import SearchBox from '../components/SearchBox/SearchBox';
+import Pagination from '../components/Pagination/Pagination';
+import NoteList from '../components/NoteList/NoteList';
+import Modal from '../components/Modal/Modal';
+import NoteForm from '../components/NoteForm/NoteForm';
 import Loader from '../components/Loader/Loader';
 import ErrorMessage from '../components/ErrorMessage/ErrorMessage';
 
-import { fetchNotes } from '../../services/noteService';
+import { fetchNotes } from '../services/noteService';
 import css from './App.module.css';
 
 const PER_PAGE = 12;
