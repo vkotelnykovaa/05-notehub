@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import ReactPaginateModule from "react-paginate";
 import type { ReactPaginateProps } from "react-paginate";
+import css from "./Pagination.module.css";
 
 type ModuleWithDefault<T> = { default: T };
 
@@ -25,7 +26,7 @@ export default function Pagination({ pageCount, forcePage, onPageChange }: Pagin
       previousLabel="<"
       nextLabel=">"
       breakLabel="…"
-      containerClassName={.pagination}
+      containerClassName={css.pagination}
       pageClassName={css.page}
       activeClassName={css.active}
       previousClassName={css.nav}
